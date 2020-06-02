@@ -16,7 +16,7 @@ const createReadMethod = (entry, state) => function() {
 };
 
 const streamBufferCache = Cls => class extends Cls {
-  set(key, bytes = 0) {
+  set(key) {
     const state = {
       alreadyRead: 0,
       readAttempts: 0,
@@ -24,7 +24,7 @@ const streamBufferCache = Cls => class extends Cls {
 
     const entry = {
       available: 0,
-      buffer: new Array(bytes),
+      buffer: [],
       complete: false,
       stream: new Duplex({
         write(chunk, encoding, cb) {

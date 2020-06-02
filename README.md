@@ -45,12 +45,11 @@ API
 
 This methods from parent `Map` class are overriden
 
-##### set(key, [bytes = 0])
+##### set(key)
 returns a Duplex stream
 ```js
 fileStream.pipe(cache.set('key')).pipe(res);
 ```
-`bytes` is optional parameter that hints to preallocate buffer for cache
 
 
 ##### get(key) => ReadableStream
