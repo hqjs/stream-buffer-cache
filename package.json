@@ -1,0 +1,33 @@
+{
+  "name": "@hqjs/stream-buffer-cache",
+  "version": "1.0.0",
+  "description": "Cache for node.js streams",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hqjs/stream-buffer-cache.git"
+  },
+  "keywords": [
+    "cache",
+    "streams"
+  ],
+  "author": "hqjs <hqjs.org@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=10.0.0",
+    "npm": ">=5.6.0"
+  },
+  "bugs": {
+    "url": "https://github.com/hqjs/stream-buffer-cache/issues"
+  },
+  "homepage": "https://github.com/hqjs/stream-buffer-cache#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "eslint": "^7.1.0"
+  }
+}
